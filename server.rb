@@ -14,3 +14,9 @@ get '/' do
   @peeps = Peep.all
   erb :index
 end
+
+post '/peeps' do
+  content = params["content"]
+  Peep.create(:content => content)
+  redirect to('/')
+end

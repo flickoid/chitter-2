@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'Peep' do
 
-  context "Demonstartion of how datamapper works" do
+  context "Demonstration of how datamapper works" do
 
     it "should be created and the retrieved from the database" do
       expect(Peep.count).to eq(0)
